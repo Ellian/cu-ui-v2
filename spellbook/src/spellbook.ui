@@ -1,11 +1,9 @@
 {
-    "name": "friendlytarget",
-    "mainFile": "friendlytarget/index.html",
-    "rect": {
-        "left": 20,
-        "top": 150,
-        "right": 198,
-        "bottom": 289
-    },
-    "handlesFriendlyTarget": true
+    "name": "spellbook",
+    "mainFile": "spellbook/index.html",
+    "handlesInput": true,
+    "handlesAbilities": true,
+    "handlesCharacter": true,
+    "hidden": true,
+    "layer": 2
 }

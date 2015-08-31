@@ -5,13 +5,59 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Friendly Target</title>
+    <title>Spell Book Target</title>
     <link rel="stylesheet" href="../lib/cu-components/main.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div id="cse-ui-friendlytarget"></div>
-<script src="../../friendlytarget/node_modules/cu-fake-api/lib/main.js"></script><!-- hack while import is not working -->
-<script src="js/friendlytarget.js"></script>
+<div id="spellbook-wrapper">
+    <div id="spellbook">
+        <div id="header">
+            <button id="btn-abilities"></button>
+            <button id="btn-components"></button>
+            <!--
+            <button id="btn-search"></button>
+            -->
+            <div id="proficiency"></div>
+            <button id="btn-help"></button>
+            <button id="btn-close"></button>
+        </div>
+        <div id="pages"></div>
+    </div>
+    <!--
+    <div id="search-modal">
+        <input type="text" id="search" />
+    </div>
+    -->
+    <div id="ability-pages-modal"></div>
+    <div id="component-pages-modal"></div>
+    <div id="error-modal">
+        <div id="error-modal-message"></div>
+        <button id="btn-close-error-modal">Close</button>
+    </div>
+</div>
+<script src="../vendor/jquery-2.1.1.js"></script>
+<script src="../vendor/turn.js"></script>
+<script src="../vendor/lodash.js"></script>
+<script src="../cu/cu.js"></script>
+<script src="../ability-crafting/componentConstants.js"></script>
+<script src="../ability-crafting/componentNetwork.js"></script>
+<script src="../ability-crafting/componentBranch.js"></script>
+<script src="../ability-crafting/componentSlot.js"></script>
+<script src="../ability-crafting/component.js"></script>
+<script src="../ability-crafting/networks/physicalNetwork.js"></script>
+<script src="../ability-crafting/networks/magicNetwork.js"></script>
+<script src="../ability-crafting/networks/comboANetwork.js"></script>
+<script src="../ability-crafting/networks/comboBNetwork.js"></script>
+<script src="../ability-crafting/networks/rangeANetwork.js"></script>
+<script src="../ability-crafting/networks/rangeBNetwork.js"></script>
+<script src="../ability-crafting/networks/shoutNetwork.js"></script>
+<script src="../ability-crafting/networks/songNetwork.js"></script>
+
+<script src="../vendor/hopscotch.js"></script>
+<script src="../tour/spellbooktour.js"></script>
+
+<script src="../../spellbook/node_modules/cu-fake-api/lib/main.js"></script><!-- hack while import is not working -->
+<script src="js/spellbook.js"></script>
 </body>
 </html>
